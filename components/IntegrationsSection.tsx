@@ -15,7 +15,7 @@ const integrations = [
 
 export default function IntegrationsSection() {
   return (
-    <section className="relative w-full bg-[#F7F7F5] h-[853px] mt-[120px]">
+    <section className="relative w-full  h-[853px] mt-[120px]">
       {/* Top Wave */}
       <Image src="/integrate.png" alt="My App Logo" fill priority />
 
