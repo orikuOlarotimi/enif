@@ -1,32 +1,83 @@
 import Image from "next/image";
 
-const integrations = [
-  { src: "/integrations/zoom.png", className: "top-[20%] left-[10%]" },
-  { src: "/integrations/zendesk.png", className: "top-[30%] left-[25%]" },
-  { src: "/integrations/evernote.png", className: "top-[18%] left-[45%]" },
-  { src: "/integrations/google.png", className: "top-[22%] right-[35%]" },
-  { src: "/integrations/dropbox.png", className: "top-[20%] right-[12%]" },
-  { src: "/integrations/trello.png", className: "top-[45%] right-[40%]" },
-  { src: "/integrations/slack.png", className: "top-[50%] left-[48%]" },
-  { src: "/integrations/mailchimp.png", className: "top-[55%] left-[18%]" },
-  { src: "/integrations/salesforce.png", className: "top-[55%] right-[18%]" },
-  { src: "/integrations/shopify.png", className: "top-[42%] right-[8%]" },
-];
-
 export default function IntegrationsSection() {
   return (
     <section className="relative w-full  h-[853px] mt-[120px]">
       {/* Top Wave */}
       <Image src="/integrate.png" alt="My App Logo" fill priority />
 
-      {integrations.map((item, i) => (
-        <div
-          key={i}
-          className={`absolute ${item.className} w-[80px] h-[80px] bg-white rounded-2xl shadow-lg flex items-center justify-center`}
-        >
-          <Image src={item.src} alt="integration" width={40} height={40} />
-        </div>
-      ))}
+      <Image
+        src="/integrations/zoom.png"
+        alt="integration"
+        width={120}
+        height={120}
+        className="absolute top-[228px] left-[10%]"
+      />
+      <Image
+        src="/integrations/zendesk.png"
+        alt="zendesk"
+        width={120}
+        height={120}
+        className="absolute top-[213px] left-[25%]"
+      />
+      <Image
+        src="/integrations/evernote.png"
+        alt="evernote"
+        width={54}
+        height={64}
+        className="absolute top-[161px] left-[42%]"
+      />
+      <Image
+        src="/integrations/google.png"
+        alt="google"
+        width={120}
+        height={120}
+        className="absolute top-[126.08px] right-[35%]"
+      />
+      <Image
+        src="/integrations/dropbox.png"
+        alt="dropbox"
+        width={120}
+        height={120}
+        className="absolute top-[120.08px] right-[12%]"
+      />
+      <Image
+        src="/integrations/shopify.png"
+        alt="shopify"
+        width={120}
+        height={120}
+        className="absolute top-[303.08px] right-[8%]"
+      />
+      <Image
+        src="/integrations/salesforce.png"
+        alt="salesforce"
+        width={93}
+        height={65}
+        className="absolute top-[382.08px] right-[18%]"
+      />
+      <Image
+        src="/integrations/trello.png"
+        alt="trello"
+        width={64}
+        height={64}
+        className="absolute top-[269.08px] right-[25%]"
+      />
+      <Image
+        src="/integrations/slack.png"
+        alt="slack"
+        width={64}
+        height={64}
+        className="absolute top-[333.08px] left-[45%]"
+      />
+      <Image
+        src="/integrations/mailchimp.png"
+        alt="mailchimp"
+        width={64}
+        height={64}
+        className="absolute top-[375.08px] left-[20%]"
+      />
+
+
 
       {/* Center content */}
       <div className="absolute w-[937px] h-[188px] text-center top-[545px] left-1/2 -translate-x-1/2">
